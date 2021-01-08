@@ -21,7 +21,7 @@ int main(){
 
         cin >> userChoice;
 
-        if(userChoice == 1 && cupsInMachine!= 0){
+        if(userChoice == 1 && cupsInMachine != 0){
             double inputedCoin = 0.0;
 
             printingMenuForInputingCoins();
@@ -31,7 +31,7 @@ int main(){
             proceeds += inputedCoin;
 
             cout << endl;
-        }else if((userChoice >= 2 && userChoice <= 4) && cupsInMachine!= 0){
+        }else if((userChoice >= 2 && userChoice <= 4) && cupsInMachine != 0){
             double costOfChosenCoffee = determineCoffeeCost(userChoice);
 
             if(userBalance >= costOfChosenCoffee){
